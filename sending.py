@@ -59,6 +59,3 @@ for i in range(1,100):
   ll.append(17979013576311)
   send_msg(ll)
     
-
-
-
