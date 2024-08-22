@@ -1,0 +1,14 @@
+
+1. Enhancing the Existing Code with Token Authorization
+Sending Token with Requests:
+Tokens are typically sent in the Authorization header as a Bearer token. This is the standard approach for most APIs.
+
+Checking Token Expiration and Authorization:
+We’ll use Flask-JWT-Extended to handle token validation and authorization, including checking for token expiration.
+
+Error Handling:
+We’ll handle errors such as invalid tokens, expired tokens, and unauthorized access by returning appropriate HTTP status codes.
+
+2. Implementing Token Revocation
+We’ll store revoked tokens in a simple in-memory set (for demonstration purposes) and check against this set on each request. 
+In a production environment, this would typically be handled with a database or a cache like Redis.
